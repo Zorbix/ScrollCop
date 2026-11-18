@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Blocked websites · ScrollCop</title><link rel="stylesheet" href="styles.css"></head>
+<body class="settings-page">
+  <header class="page-header"><div class="brand"><img class="logo" src="badge.svg" width="30" height="35" alt="" aria-hidden="true"><span>ScrollCop</span></div><span class="header-note">Keeping distractions in check.</span></header>
+  <main class="settings-main">
+    <div class="eyebrow">KEEP DISTRACTIONS IN CHECK</div><h1>Less feed.<br>More focus.</h1><p class="intro">Choose which websites to put behind bars.</p>
+    <section class="control-card"><div><h2>Put distractions behind bars</h2><p id="master-description">Loading your settings…</p></div><label class="switch"><input id="master-toggle" type="checkbox" aria-label="Block distractions" disabled><span></span></label></section>
+    <div class="list-heading"><h2>Your blocklist <span id="site-count"></span></h2><span>Changes save automatically</span></div>
+    <p class="pause-note" id="pause-note" hidden>Blocking is paused. Your blocklist is saved for when you turn blocking back on.</p>
+    <section id="site-list" class="site-list" aria-label="Website blocking settings"></section>
+    <form id="add-site-form" class="add-site-form">
+      <label for="custom-domain">Add your own website</label>
+      <div class="add-site-fields"><input id="custom-domain" type="text" placeholder="example.com or https://example.com" required maxlength="2048" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="custom-help"><button type="submit" disabled>Add website</button></div>
+      <p id="custom-help">Blocks this website and all its subdomains. Chrome may ask you to allow access to this website.</p>
+      <p id="add-status" role="status"></p>
+    </form>
+    <p id="error" class="error" role="alert"></p>
+    <p class="settings-footnote">Blocking includes subdomains and takes effect when you open or reload a page.<br>Your preferences stay on this device.</p>
+  </main><footer>© <a href="https://dvorakpetr.eu" target="_blank" rel="noopener noreferrer">dvorakpetr.eu</a></footer>
+  <script type="module" src="ui.js"></script>
+</body></html>

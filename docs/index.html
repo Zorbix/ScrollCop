@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScrollCop — Put distractions behind bars</title>
+  <meta name="description" content="Your focus has backup. A free Chrome extension to block distracting websites, with a master switch, individual controls, and your own blocklist.">
+  <meta property="og:title" content="ScrollCop — Put distractions behind bars">
+  <meta property="og:description" content="Less feed. More focus. Download ScrollCop for Chrome.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zorbix.github.io/ScrollCop/">
+  <meta property="og:image" content="https://zorbix.github.io/ScrollCop/assets/thumbnail.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/badge.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="ScrollCop home"><img src="assets/badge.svg" width="31" height="36" alt="">ScrollCop</a>
+    <nav aria-label="Main navigation"><a href="#install">How to install</a><a href="https://github.com/Zorbix/ScrollCop">GitHub <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal"></span> YOUR FOCUS HAS BACKUP</p>
+        <h1>Put distractions<br>behind bars.</h1>
+        <p class="lead">Opened a new tab. Lost an hour?<br>Let ScrollCop keep the usual suspects in check.</p>
+        <div class="hero-actions"><a class="button" href="downloads/scrollcop.zip" download>Download for Chrome <span aria-hidden="true">↓</span></a><a class="text-link" href="#install">Installation guide <span aria-hidden="true">↘</span></a></div>
+        <p class="download-note">Free download · v1.0.0 · Manual installation</p>
+        <div class="hero-facts"><span>No account</span><span>No tracking</span><span>Your rules</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="case-label"><span>CASE NO. 001</span><span>EXCESSIVE SCROLLING</span></div>
+        <div class="popup-preview" aria-label="Preview of ScrollCop with blocking enabled">
+          <div class="preview-brand"><img src="assets/badge.svg" width="29" height="34" alt=""><strong>ScrollCop</strong><span>YOUR FOCUS, FIRST</span></div>
+          <h2>A little less<br>distraction</h2>
+          <div class="preview-control"><div><strong>Put distractions behind bars</strong><p>ScrollCop is on duty.</p></div><span class="toggle" aria-hidden="true"></span></div>
+          <p class="preview-status"><span class="signal"></span> 15 websites behind bars.</p>
+          <div class="preview-options"><span aria-hidden="true">⚙</span> Manage blocked websites <span aria-hidden="true">↗</span></div>
+          <div class="preview-footer">© dvorakpetr.eu</div>
+        </div>
+        <div class="duty-stamp"><span class="signal"></span> ON DUTY. OFF YOUR FEED.</div>
+      </div>
+    </section>
+    <section class="suspects" aria-label="Included websites"><div class="wrap"><p class="eyebrow">THE USUAL SUSPECTS</p><p class="network-list">Instagram <span>·</span> X / Twitter <span>·</span> TikTok <span>·</span> YouTube <span>·</span> Reddit <span>·</span> 9GAG</p><p>15 websites included. Add any others that steal your attention.</p></div></section>
+    <section class="features wrap" aria-labelledby="features-heading">
+      <div class="section-intro"><p class="eyebrow">YOU CALL THE SHOTS</p><h2 id="features-heading">A little backup.<br>A lot more focus.</h2></div>
+      <div class="feature-list">
+        <article><span class="feature-number">01</span><div><h3>One switch. Distractions handled.</h3><p>Start or pause blocking in a click. Your individual website choices stay saved while ScrollCop is off duty.</p></div></article>
+        <article><span class="feature-number">02</span><div><h3>Your blocklist. Your call.</h3><p>Toggle each website separately or add your own. Custom entries include subdomains and can be removed anytime.</p></div></article>
+        <article><span class="feature-number">03</span><div><h3>Private by default.</h3><p>Your preferences stay on your device. No accounts, analytics, or browsing history collection. Source code is available on GitHub.</p></div></article>
+      </div>
+    </section>
+    <section class="install-section" id="install" aria-labelledby="install-heading"><div class="wrap install-layout">
+      <div><p class="eyebrow">REPORT FOR DUTY</p><h2 id="install-heading">Set up your<br>scroll patrol.</h2><p class="install-note">Install directly in desktop Chrome.<br>No Chrome Web Store listing required.</p><a class="button" href="downloads/scrollcop.zip" download>Get ScrollCop <span aria-hidden="true">↓</span></a></div>
+      <ol class="steps">
+        <li><h3>Download and unzip</h3><p>Download the ZIP above and extract it into a folder you’ll keep on your computer.</p></li>
+        <li><h3>Open Chrome’s extensions page</h3><p>Enter <code>chrome://extensions</code> in the address bar, then enable <strong>Developer mode</strong> in the top right.</p></li>
+        <li><h3>Load ScrollCop</h3><p>Click <strong>Load unpacked</strong> and select the extracted folder containing <code>manifest.json</code>.</p></li>
+        <li><h3>Pin it. Set your boundaries.</h3><p>Pin ScrollCop from Chrome’s Extensions menu. Blocking starts enabled. Open the popup to manage your blocklist.</p></li>
+      </ol>
+    </div></section>
+    <section class="faq wrap" aria-labelledby="faq-heading"><h2 id="faq-heading">Before you clock in.</h2>
+      <details><summary>Why does ScrollCop ask for website access?</summary><p>Access lets ScrollCop redirect blocked websites to its own reminder page. The default sites are listed in the extension’s permissions; adding a custom website may prompt you to grant access to that domain.</p></details>
+      <details><summary>Will it block websites I already have open?</summary><p>Open or reload the website after enabling blocking. ScrollCop blocks page navigation; it does not remove embedded social content from other websites.</p></details>
+      <details><summary>How do I update or uninstall it?</summary><p>For an update, replace the files in your installation folder and click Reload on ScrollCop’s card at <code>chrome://extensions</code>. To uninstall, click Remove on that card. Your blocklist is stored locally, so removing the extension clears its settings.</p></details>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="./"><img src="assets/badge.svg" width="23" height="27" alt="">ScrollCop</a><span>Less scrolling. More living.</span><a href="https://dvorakpetr.eu">© dvorakpetr.eu</a></footer>
+</body>
+</html>

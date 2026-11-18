@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "ScrollCop",
+  "version": "1.0.0",
+  "description": "Put distractions behind bars. Block social networks and custom websites with a single switch.",
+  "minimum_chrome_version": "102",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "webNavigation"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ScrollCop"
+  },
+  "options_page": "options.html",
+  "host_permissions": [
+    "*://*.instagram.com/*",
+    "*://*.facebook.com/*",
+    "*://*.fb.com/*",
+    "*://*.x.com/*",
+    "*://*.twitter.com/*",
+    "*://*.tiktok.com/*",
+    "*://*.youtube.com/*",
+    "*://*.youtu.be/*",
+    "*://*.reddit.com/*",
+    "*://*.redd.it/*",
+    "*://*.threads.net/*",
+    "*://*.threads.com/*",
+    "*://*.snapchat.com/*",
+    "*://*.linkedin.com/*",
+    "*://*.pinterest.com/*",
+    "*://*.twitch.tv/*",
+    "*://*.discord.com/*",
+    "*://*.discord.gg/*",
+    "*://*.bsky.app/*",
+    "*://*.tumblr.com/*",
+    "*://*.9gag.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "blocked.html"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
