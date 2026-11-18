@@ -8,6 +8,8 @@ FILES = [
     'manifest.json', 'background.js', 'sites.js', 'ui.js',
     'popup.html', 'options.html', 'styles.css', 'badge.svg',
     'blocked.html', 'blocked.css', 'blocked.js',
+    'icons/badge-16.png', 'icons/badge-32.png',
+    'icons/badge-48.png', 'icons/badge-128.png',
 ]
 if (ROOT / 'LICENSE').is_file():
     FILES.append('LICENSE')
